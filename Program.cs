@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         //1.
-        // var numbers = Enumerable.Range(1, 10).ToList(); // = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];// = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         // var result = numbers.Where(n => n > 5);
 
@@ -15,7 +15,7 @@ class Program
         // }
 
         //2.
-        // var words = new List<string>() {"apple", "banana", "cherry"};
+        // List<string> words = ["apple", "banana", "cherry"];
 
         // var wordLength = words.Select(word => word.Length);
 
@@ -25,7 +25,7 @@ class Program
         // }
 
         //3.
-        // var words = new List<string>() {"John", "Alice", "Bob"};
+        // List<string> words = ["John", "Alice", "Bob"];
 
         // var orderedWords = words.OrderBy(n => n);
 
@@ -61,9 +61,9 @@ class Program
         //7.
         // var cities = new List<string>() { "Los Santos", "New York", "Los Angeles", "Chicago" };
 
-        // var city = cities.FirstOrDefault(c => c.StartsWith('L'));
+        // var city = cities.FirstOrDefault(c => c.StartsWith('L')) ?? "No Match";
 
-        // Console.WriteLine(city ?? "No match");
+        // Console.WriteLine(city);
 
         //8. 
         // var fruits = new List<string>() {"apple", "banana", "cherry"};
